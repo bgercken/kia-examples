@@ -10,10 +10,11 @@ apt-key add ntop.key
 popd
 cat >> /etc/apt/sources.list.d/ntop.list << EOF
 deb http://apt.ntop.org/stretch_pi armhf/
- deb http://apt.ntop.org/stretch_pi all/
+deb http://apt.ntop.org/stretch_pi all/
 EOF
 
 apt-get update
 apt-get install ntopng nprobe
+apt-get install tcpdump
 
 
